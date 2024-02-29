@@ -5,8 +5,12 @@ FROM maven:3.8.4-openjdk-17 AS builder
 WORKDIR /app
 
 # Copy the Maven executable JAR file and the settings.xml file
+COPY .mvn ./.mvn
 COPY pom.xml .
 COPY src ./src
+COPY mvwn .
+COPY mvwn.cmd .
+COPY target ./target
 
 # Build the application
 RUN mvn clean package -DskipTests
@@ -25,3 +29,6 @@ EXPOSE 9091
 
 # Command to run the application
 CMD ["java", "-jar", "app.jar"]
+
+
+# may not work
