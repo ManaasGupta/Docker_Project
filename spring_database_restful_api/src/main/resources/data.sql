@@ -1,0 +1,22 @@
+INSERT INTO student (first_name, last_name, email, contact_number) 
+VALUES 
+('Aryan', 'Patil', 'aryan.patil@example.com', '9876543210'),
+('Sonia', 'Sharma', 'sonia.sharma@example.com', '9876543211'),
+('Rahul', 'Jain', 'rahul.jain@example.com', '9876543212'),
+('Anita', 'Ravat', 'anita.ravat@example.com', '9876543213'),
+('Mohan', 'Kumar', 'mohan.kumar@example.com', '9876543214'),
+('Priya', 'Verma', 'priya.verma@example.com', '9876543215'),
+('Raj', 'Singh', 'raj.singh@example.com', '9876543216'),
+('Neha', 'Gupta', 'neha.gupta@example.com', '9876543217'),
+('Sanjay', 'Mehta', 'sanjay.mehta@example.com', '9876543218'),
+('Divya', 'Shah', 'divya.shah@example.com', '9876543219'),
+('Rakesh', 'Patel', 'rakesh.patel@example.com', '9876543220'),
+('Pooja', 'Yadav', 'pooja.yadav@example.com', '9876543221'),
+('Amit', 'Shinde', 'amit.shinde@example.com', '9876543222'),
+('Sangeeta', 'Rao', 'sangeeta.rao@example.com', '9876543223'),
+('Vikram', 'Malhotra', 'vikram.malhotra@example.com', '9876543224'),
+('Nisha', 'Bansal', 'nisha.bansal@example.com', '9876543225'),
+('Rajesh', 'Agrawal', 'rajesh.agrawal@example.com', '9876543226'),
+('Kavita', 'Choudhary', 'kavita.choudhary@example.com', '9876543227'),
+('Manish', 'Saxena', 'manish.saxena@example.com', '9876543228'),
+('Anjali', 'Sharma', 'anjali.sharma@example.com', '9876543229');
