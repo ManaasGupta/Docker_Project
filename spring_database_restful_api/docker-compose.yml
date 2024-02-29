@@ -1,0 +1,34 @@
+version: '3.7'
+
+services:
+
+  spring_app_container:
+    container_name: spring_app_container
+    image: spring_app:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9091:9091"
+    networks:
+      - spring_database_network
+    depends_on:
+      - mysql_container
+      - wait_for_mysql
+      
+  
+  mysql_container:
+    container_name: mysql_container
+    image: mysql:8.3.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: student_database
+    ports:
+      - "3306:3306"
+    networks:
+      - spring_database_network
+
+
+networks:
+  spring_database_network:
+    driver: bridge
