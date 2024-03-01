@@ -2,7 +2,7 @@ docker network create --driver bridge spring_database_network
 docker run --name mysql_container --net=spring_database_network -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=student_database -p 3306:3306 mysql:8.0
 docker exec -it mysql_container mysql -u root -p (optional) will this work ?? yes/no??
 docker build -t spring_app:latest .
-docker run -d -p 9091:9091 --net=spring_database_network --name=spring_container spring_app:latest
+docker run -p 9091:9091 --net=spring_database_network --name=spring_container spring_app:latest
 
 ** Important note 
 
