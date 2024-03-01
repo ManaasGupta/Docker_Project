@@ -14,7 +14,6 @@ services:
       - spring_database_network
     depends_on:
       - mysql_container
-      - wait_for_mysql
       
   
   mysql_container:
