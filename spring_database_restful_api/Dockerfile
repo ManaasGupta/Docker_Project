@@ -29,6 +29,3 @@ EXPOSE 9091
 
 # Command to run the application
 CMD ["java", "-jar", "app.jar"]
-
-
-# may not work
